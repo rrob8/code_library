@@ -1,0 +1,11 @@
+updating the property of an object selectively when its in an array
+
+function updateToy (likedToy) {
+    console.log(likedToy.likes)
+    const updatedToys = [...toysOnDisplay].map(toy=> 
+      toy == likedToy? {...toy, likes: toy.likes + 1} : toy)
+
+    setToysOnDisplay(updatedToys)
+  }
+
+  https://medium.com/@amitsharma_24072/handling-multiple-inputs-in-reactjs-best-practices-for-react-js-input-forms-9b973f4beb7e#:~:text=Handling%20many%20inputs%20can%20be,it%20as%20the%20value%20changes.
